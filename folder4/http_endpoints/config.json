@@ -1,0 +1,36 @@
+[
+  {
+    "name": "/v2",
+    "description": "",
+    "method": "GET",
+    "endpoint": "/v2",
+    "data_source": {
+      "cluster_id": 3329005
+    },
+    "params": [],
+    "settings": {
+      "timeout": 5000,
+      "row_limit": 50
+    },
+    "sql_file": "sql/GET-v2.sql",
+    "type": "sql_endpoint",
+    "return_type": "json"
+  },
+  {
+    "name": "/v1",
+    "description": "",
+    "method": "GET",
+    "endpoint": "/v1",
+    "data_source": {
+      "cluster_id": 2939271
+    },
+    "params": [],
+    "settings": {
+      "timeout": 5000,
+      "row_limit": 50
+    },
+    "sql_file": "sql/GET-v1.sql",
+    "type": "sql_endpoint",
+    "return_type": "json"
+  }
+]
