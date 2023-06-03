@@ -56,5 +56,29 @@
     "sql_file": "sql/GET-v2_dump_oMsqCe.sql",
     "type": "sql_endpoint",
     "return_type": "json"
+  },
+  {
+    "name": "v5",
+    "description": "Test description",
+    "method": "GET",
+    "endpoint": "/v5_test",
+    "data_source": {
+      "cluster_id": 3118970
+    },
+    "params": [
+      {
+        "name": "event_year",
+        "type": "string",
+        "required": 0,
+        "default": "2022"
+      }
+    ],
+    "settings": {
+      "timeout": 4000,
+      "row_limit": 20
+    },
+    "sql_file": "sql/GET-v5.sql",
+    "type": "sql_endpoint",
+    "return_type": "json"
   }
 ]
