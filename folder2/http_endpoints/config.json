@@ -58,10 +58,10 @@
     "return_type": "json"
   },
   {
-    "name": "v5",
+    "name": "/v5",
     "description": "Test description",
     "method": "GET",
-    "endpoint": "/v5_test",
+    "endpoint": "/v5test",
     "data_source": {
       "cluster_id": 3118970
     },
