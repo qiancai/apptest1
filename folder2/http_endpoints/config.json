@@ -45,8 +45,8 @@
       {
         "name": "event_year",
         "type": "string",
-        "required": 0,
-        "default": ""
+        "required": 1,
+        "default": "2022"
       }
     ],
     "settings": {
