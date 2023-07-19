@@ -1,0 +1,123 @@
+[
+  {
+    "name": "a-manual-created-ep",
+    "description": "",
+    "method": "POST",
+    "endpoint": "/manua/data",
+    "data_source": {
+      "cluster_id": 1373933076659950568
+    },
+    "params": [
+      {
+        "name": "file_name",
+        "type": "string",
+        "required": 0,
+        "default": ""
+      },
+      {
+        "name": "file_type",
+        "type": "string",
+        "required": 0,
+        "default": ""
+      },
+      {
+        "name": "file_category",
+        "type": "string",
+        "required": 0,
+        "default": ""
+      }
+    ],
+    "settings": {
+      "timeout": 5000,
+      "row_limit": 50
+    },
+    "tag": "",
+    "batch_operation": false,
+    "sql_file": "sql/POST-manua-data.sql",
+    "type": "sql_endpoint",
+    "return_type": "json"
+  },
+  {
+    "name": "/ep_scores",
+    "description": "",
+    "method": "POST",
+    "endpoint": "/ep_scores",
+    "data_source": {
+      "cluster_id": 1373933076659950568
+    },
+    "params": [
+      {
+        "name": "gender",
+        "type": "string",
+        "required": 0,
+        "default": ""
+      },
+      {
+        "name": "score",
+        "type": "number",
+        "required": 0,
+        "default": ""
+      }
+    ],
+    "settings": {
+      "timeout": 5000,
+      "row_limit": 100
+    },
+    "tag": "",
+    "batch_operation": false,
+    "sql_file": "sql/POST-ep_scores.sql",
+    "type": "sql_endpoint",
+    "return_type": "json"
+  },
+  {
+    "name": "/ep_scoress",
+    "description": "",
+    "method": "POST",
+    "endpoint": "/ep_scoress",
+    "data_source": {
+      "cluster_id": 1373933076659950568
+    },
+    "params": [
+      {
+        "name": "gender",
+        "type": "string",
+        "required": 0,
+        "default": ""
+      },
+      {
+        "name": "score",
+        "type": "number",
+        "required": 0,
+        "default": ""
+      }
+    ],
+    "settings": {
+      "timeout": 5000,
+      "row_limit": 50
+    },
+    "tag": "",
+    "batch_operation": false,
+    "sql_file": "sql/POST-ep_scoress.sql",
+    "type": "sql_endpoint",
+    "return_type": "json"
+  },
+  {
+    "name": "/testdocfiless",
+    "description": "",
+    "method": "DELETE",
+    "endpoint": "/testdocfiless",
+    "data_source": {
+      "cluster_id": 1373933076659950568
+    },
+    "params": [],
+    "settings": {
+      "timeout": 5000,
+      "row_limit": 50
+    },
+    "tag": "Default",
+    "batch_operation": true,
+    "sql_file": "sql/DELETE-testdocfiless.sql",
+    "type": "sql_endpoint",
+    "return_type": "json"
+  }
+]
